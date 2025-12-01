@@ -2,36 +2,30 @@
 
 import { motion } from 'framer-motion'
 import { TrendingUp, Users, Trophy, DollarSign, BarChart3, Target } from 'lucide-react'
-import CountUp from 'react-countup'
 
 const StatsSection = () => {
   const stats = [
     {
       icon: <Users className="w-8 h-8" />,
-      value: 12543,
-      suffix: "+",
+      value: "12.543",
       label: "Usuários Ativos",
       description: "Crescimento de 40% ao mês"
     },
     {
       icon: <Trophy className="w-8 h-8" />,
-      value: 892,
-      suffix: "+",
+      value: "892+",
       label: "Prêmios Ganhos",
       description: "Com nossa metodologia"
     },
     {
       icon: <DollarSign className="w-8 h-8" />,
-      value: 15.2,
-      prefix: "R$ ",
-      suffix: "M",
+      value: "R$ 15,2M",
       label: "Em Prêmios",
       description: "Distribuídos aos usuários"
     },
     {
       icon: <Target className="w-8 h-8" />,
-      value: 95,
-      suffix: "%",
+      value: "95%",
       label: "Taxa de Acerto",
       description: "Acima da média do mercado"
     }
@@ -67,15 +61,8 @@ const StatsSection = () => {
                 <div className="text-blue-400">{stat.icon}</div>
               </div>
               <div>
-                <div className="text-3xl font-bold">
-                  <CountUp
-                    start={0}
-                    end={stat.value}
-                    duration={2.5}
-                    decimals={stat.value % 1 !== 0 ? 1 : 0}
-                    prefix={stat.prefix || ""}
-                    suffix={stat.suffix || ""}
-                  />
+                <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                  {stat.value}
                 </div>
                 <div className="text-gray-400 text-sm">{stat.label}</div>
               </div>
