@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -18,7 +18,9 @@
     "framer-motion": "^10.16.0",
     "lucide-react": "^0.309.0",
     "react-hot-toast": "^2.4.1",
-    "react-confetti": "^6.1.0"
+    "react-confetti": "^6.1.0",
+    "react-countup": "^6.3.2",
+    "date-fns": "^2.30.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
