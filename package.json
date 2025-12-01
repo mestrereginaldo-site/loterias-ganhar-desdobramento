@@ -19,7 +19,6 @@
     "lucide-react": "^0.309.0",
     "react-hot-toast": "^2.4.1",
     "react-confetti": "^6.1.0",
-    "react-countup": "^6.3.2"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
